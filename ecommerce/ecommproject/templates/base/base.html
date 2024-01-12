@@ -67,7 +67,8 @@ $(document).ready(function() {
 		<div class="row align-items-center">
 			<div class="col-lg-2 col-4">
 				<div class="brand-wrap">
-					<img class="logo" src="public/static/images/logo.png">
+					{% load static %}
+					<img class="logo" src="{% static 'images/logo.png' %} "> 
 				</div> <!-- brand-wrap.// -->
 			</div>
 			<div class="col-lg-6 col-sm-12">
@@ -93,8 +94,8 @@ $(document).ready(function() {
 						<div class="text">
 							<span class="text-muted">Welcome!</span>
 							<div> 
-								<a href="#">Sign in</a> |  
-								<a href="#"> Register</a>
+								<a href="/accounts/register">Sign in</a> |  
+								<a href="/accounts/login"> Register</a>
 							</div>
 						</div>
 					</div>

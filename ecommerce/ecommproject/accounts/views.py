@@ -66,6 +66,10 @@ def register_page(request):
     return render(request ,'accounts/register.html')
 
 
+def cart(request):
+    return render(request,"accounts/cart.html")
+
+
 # def activate_email(request , email_token):
 #     try:
 #         user = Profile.objects.get(email_token= email_token)
